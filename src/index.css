@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container{
+  margin: auto;
+  padding:0 2rem;
+}
+.btn{
+  background-color: green;
+  padding: 0 8px;
+  position: absolute;
+  top: 2%;
+  left:8%;
+  /* display: none; */
+  transition: transform 1s,opacity 1s;
+  transform: translatex(-100%);
+  opacity: 0;
+}
+.product{
+  overflow: hidden;
+}
+
+.product:hover .btn{
+  opacity: 1;
+
+  transform: translatex(-0%);
+  /* display: flex; */
+}

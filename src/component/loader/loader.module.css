@@ -1,0 +1,35 @@
+/* حاوية لتوسيط الـ Loader */
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: black; */
+}
+
+.loader {
+  border: 24px solid #00fd2e;
+  border-color: #FF3D00 #FF3D00 #00fd2e #00fd2e;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+  width: 100px; /* عرض الـ Loader */
+  height: 100px; /* ارتفاع الـ Loader */
+  position: relative;
+ 
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  width: 15px;
+  height: 15px;
+  background: #00fd2e;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
